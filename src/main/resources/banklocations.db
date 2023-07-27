@@ -1,0 +1,10 @@
+EC; East Central London; BRANCH;14 Central Road, London EC1 8HY; 6785423478; 51.5756; 0.8965; Open: 09.30 - 15.30; Accessible ATMs
+W; Paddington London; ATM; 22 Market Road, London W2 6HF; 4723628525; 51.6587; 0.9754; Open: 24 hours; Accessible ATMs
+B; Birmingham; BRANCH_AND_ATM; 3 East Walk Road, Birmingham B1 3LH; 2587469150; 55.1024; 0.3547; Open: 09.30 - 15.00; Accessible ATMs
+CO; Colchester; ATM; 22 Norwich Road, Colchester CO1 8DR; 8204603547; 52.0254; 0.3401; Open: 24 hours; Accessible ATMs
+EH; Edinburgh; BRANCH; 54 Waldon Road, Edinburgh EH2 9LK; 5801473520; 58.0521; 0.9401; Open: 09.30 - 15.30; No counter service on Saturdays
+M; Manchester; BRANCH; 41 Victoria Road, Manchester M3 2BF; 7021468523; 57.3514; 1.1021; Open: 09.30 - 15.30; No counter service on Saturdays
+S; Sheffield; BRANCH_AND_ATM; 8 Market Road, Sheffield S1 7MB; 8016502476; 53.3542; 0.8403; Open: 09.30 - 15.30; Accessible ATMs
+L; Liverpool; ATM; 22 Barnes Road, Liverpool L3 4JG; 7620145820; 57.4201; 1.6852; Open: 24 hours; Accessible ATMs
+BN; Brighton; BRANCH_AND_ATM; 11 High Street, Brighton BN1 5JC; 5920146314; 49.5201; 0.4023; Open: 09.30 - 15.30; Accessible ATMs, No counter service on Saturdays
+G; Glasgow; BRANCH_AND_ATM; 62 Crofts Road, Glasgow G1 2UT; 5024947882; 59.3410; 0.9721; Open: 09.30 - 15.30; Accessible ATMs

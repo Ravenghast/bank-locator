@@ -1,0 +1,47 @@
+apply plugin: 'java'
+
+group 'org.retail'
+version '1.0'
+
+defaultTasks 'clean', 'jar', 'copyArtifacts'
+
+def buildLib = "${buildDir}/libs"
+def tgt = "delivery"
+def lib = "${tgt}/lib"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-web:2.5.8'
+    compile 'io.springfox:springfox-swagger2:2.9.2'
+    compile 'io.springfox:springfox-swagger-ui:2.9.2'
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
+    jar {
+        manifest {
+            attributes (
+                    'Main-Class': 'com.mybank.BankLocatorApplication',
+                    'Class-Path': configurations.compile.collect { it.getName() }.join(' ')
+            )
+        }
+    }
+}
+
+task copyArtifacts {
+    doLast {
+        copy {
+            from(sourceSets.main.runtimeClasspath.findAll { it.name.endsWith('.jar') })
+            into(lib)
+        }
+        copy {
+            from "${buildLib}/${rootProject.name}-${version}.jar"
+            into(lib)
+        }
+    }
+}
+
+clean {
+    delete tgt
+}
