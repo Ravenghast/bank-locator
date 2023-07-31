@@ -156,18 +156,21 @@ public class LocationConnector {
             case 'E':
             case 'G':
                 if (ServiceType.valueOf(serviceType) == ServiceType.BRANCH) {
-                    LocationWrapper w1 = branchLocationDB.get("S");
-                    w1.setDistance("14.3 miles");
+                    LocationWrapper w1 = branchLocationDB.get("RM");
+                    w1.setDistance("7.3 miles");
                     list.add(w1);
                 }
                 else if (ServiceType.valueOf(serviceType) == ServiceType.ATM) {
-                    LocationWrapper w1 = branchLocationDB.get("S");
-                    w1.setDistance("14.3 miles");
+                    LocationWrapper w1 = atmLocationDB.get("W");
+                    w1.setDistance("5.1 miles");
                     list.add(w1);
+                    LocationWrapper w2 = atmLocationDB.get("RM");
+                    w2.setDistance("7.3 miles");
+                    list.add(w2);
                 }
                 else if (ServiceType.valueOf(serviceType) == ServiceType.BRANCH_AND_ATM) {
-                    LocationWrapper w1 = branchLocationDB.get("S");
-                    w1.setDistance("14.3 miles");
+                    LocationWrapper w1 = branchLocationDB.get("RM");
+                    w1.setDistance("7.3 miles");
                     list.add(w1);
                 }
                 break;
