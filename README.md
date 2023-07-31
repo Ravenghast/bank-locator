@@ -12,8 +12,8 @@ Run the gradle build either through interactive IDE
 
 ## 4. Test the app using Swagger
 1. In a browser, open the link [here](http://localhost:8080/swagger-ui.html)
-2. From the home page, click on the option: **wallet-controller**
+2. From the home page, click on the option: **locator-controller**
 3. After that, click the **GET** button for the REST API *bank-locations*
 4. Next click, the option **Try it out**
-5. Enter the parameters for inputs: **amount** and **wallet** and finally click **Execute**
+5. Enter the parameters for inputs: **postCode** (valid UK Postcode) and **serviceType** (valid values: BRANCH, ATM, BRANCH_AND_ATM) and finally click **Execute**
 6. Try various test conditions for both positive & negative cases.
